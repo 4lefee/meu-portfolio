@@ -1,0 +1,68 @@
+/* Estilo geral da página */
+.projects-page {
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #fff;
+    min-height: 100vh; /* Altura mínima para ocupar a tela */
+    padding: 2rem; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Título da página */
+  .projects-title {
+    font-size: 3rem;
+    color: #ff414d; /* Vermelho */
+    text-align: center;
+    margin: 0; /* Remove margem padrão */
+  }
+  
+  /* Container dos projetos */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid adaptável */
+    gap: 2rem; /* Espaço entre os projetos */
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 1200px; /* Limita a largura máxima */
+  }
+  
+  /* Estilo de cada projeto */
+  .project {
+    background-color: #252545; /* Fundo de cada projeto */
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  }
+  
+  /* Estilo dos ícones */
+  .project-icon {
+    width: 200px; /* Tamanho fixo dos ícones */
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Estilo para o ícone do Kafka */
+  .kafka-icon {
+    background-image: url("WhatsApp Image 2024-11-17 at 02.22.38.jpeg"); /* Substituir pelo caminho da imagem */
+  }
+  
+  /* Estilo para o ícone do RabbitMQ */
+  .rabbitmq-icon {
+    background-image: url("WhatsApp Image 2024-11-17 at 02.22.38.jpeg"); /* Substituir pelo caminho da imagem */
+  }
+  
+  /* Nome do projeto */
+  .project-name {
+    color: #ff414d; /* Vermelho */
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  

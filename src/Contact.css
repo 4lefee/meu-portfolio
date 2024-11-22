@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%; /* Garante que o body ocupe 100% da altura da viewport */
+  }
+  
+  .contact-page {
+    background-color: #1f1f38;
+    color: #75DA8B;
+    min-height: 100vh; /* Garante que o container principal ocupe toda a altura */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #75DA8B; /* Cor do botão */
+  }
+  
+  .contact-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .contact-link {
+    color: #3B82F6; /* Azul para links */
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,39 @@
+/* Estilo geral da página de Experiências */
+.experiences-page {
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #8A2BE2; /* Cor do botão Experiências */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Título da página */
+  .experiences-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Container de tópicos */
+  .experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%; /* Largura máxima dos tópicos */
+    max-width: 800px; /* Limite de largura */
+  }
+  
+  /* Cada tópico */
+  .experience-topic {
+    background-color: #2c2f47; /* Fundo de cada tópico */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Cor do texto */
+    font-size: 1.5rem;
+  }
+  
