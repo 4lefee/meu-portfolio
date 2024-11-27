@@ -1,68 +1,75 @@
 /* Estilo geral da página */
 .projects-page {
-    background-color: #1a1a2e; /* Fundo escuro */
-    color: #fff;
-    min-height: 100vh; /* Altura mínima para ocupar a tela */
-    padding: 2rem; /* Espaçamento interno */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
+  background-color: #1a1a2e; /* Fundo escuro */
+  color: #fff;
+  min-height: 100vh; /* Altura mínima para ocupar a tela */
+  padding: 2rem; /* Espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Título da página */
+.projects-title {
+  font-size: 3rem;
+  color: #ff414d; /* Vermelho */
+  text-align: center;
+  margin: 0; /* Remove margem padrão */
+}
+
+/* Container dos projetos */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid adaptável */
+  gap: 2rem; /* Espaço entre os projetos */
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 1200px; /* Limita a largura máxima */
+}
+
+/* Estilo de cada projeto */
+.project {
+  background-color: #252545; /* Fundo de cada projeto */
+  padding: 1.5rem;
+  border-radius: 4px; /* Bordas menos arredondadas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação */
+}
+
+/* Efeito de hover no projeto */
+.project:hover {
+  transform: scale(1.05); /* Leve aumento */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo dos ícones */
+.project-icon {
+  width: 300px; /* Tamanho fixo das imagens */
+  height: 300px;
+  background-size: contain; /* Garante que a imagem inteira apareça */
+  background-repeat: no-repeat;
+  background-position: center;
   
-  /* Título da página */
-  .projects-title {
-    font-size: 3rem;
-    color: #ff414d; /* Vermelho */
-    text-align: center;
-    margin: 0; /* Remove margem padrão */
-  }
-  
-  /* Container dos projetos */
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid adaptável */
-    gap: 2rem; /* Espaço entre os projetos */
-    width: 100%; /* Ocupa toda a largura do container */
-    max-width: 1200px; /* Limita a largura máxima */
-  }
-  
-  /* Estilo de cada projeto */
-  .project {
-    background-color: #252545; /* Fundo de cada projeto */
-    padding: 1rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
-  }
-  
-  /* Estilo dos ícones */
-  .project-icon {
-    width: 200px; /* Tamanho fixo dos ícones */
-    height: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  /* Estilo para o ícone do Kafka */
-  .kafka-icon {
-    background-image: url("WhatsApp Image 2024-11-17 at 02.22.38.jpeg"); /* Substituir pelo caminho da imagem */
-  }
-  
-  /* Estilo para o ícone do RabbitMQ */
-  .rabbitmq-icon {
-    background-image: url("WhatsApp Image 2024-11-17 at 02.22.38.jpeg"); /* Substituir pelo caminho da imagem */
-  }
-  
-  /* Nome do projeto */
-  .project-name {
-    color: #ff414d; /* Vermelho */
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  
+}
+
+/* Ícone do Kafka */
+.kafka-icon {
+  background-image: url("WhatsApp Image 2024-11-17 at 02.22.38.jpeg"); 
+}
+
+/* Ícone do RabbitMQ */
+.rabbitmq-icon {
+  background-image: url("image.png"); 
+}
+
+/* Nome do projeto */
+.project-name {
+  color: #ff414d; /* Vermelho */
+  font-size: 1.5rem; /* Fonte maior */
+  text-align: center;
+  font-weight: bold;
+}

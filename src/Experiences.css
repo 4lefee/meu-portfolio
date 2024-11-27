@@ -1,39 +1,47 @@
 /* Estilo geral da página de Experiências */
 .experiences-page {
-    background-color: #1a1a2e; /* Fundo escuro */
-    color: #8A2BE2; /* Cor do botão Experiências */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-  
-  /* Título da página */
-  .experiences-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  /* Container de tópicos */
-  .experiences-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 80%; /* Largura máxima dos tópicos */
-    max-width: 800px; /* Limite de largura */
-  }
-  
-  /* Cada tópico */
-  .experience-topic {
-    background-color: #2c2f47; /* Fundo de cada tópico */
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #fff; /* Cor do texto */
-    font-size: 1.5rem;
-  }
-  
+  background-color: #1a1a2e; /* Fundo escuro */
+  color: #8A2BE2; /* Cor do botão Experiências */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Título da página */
+.experiences-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #8A2BE2; /* Cor roxa do título */
+}
+
+/* Container de tópicos */
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%; /* Largura máxima dos tópicos */
+  max-width: 800px; /* Limite de largura */
+}
+
+/* Cada tópico */
+.experience-topic {
+  background-color: #8A2BE2; /* Cor roxa para o fundo das caixas de texto */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #000; /* Texto em preto */
+  font-size: 1.5rem;
+  text-align: justify; /* Texto justificado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.experience-topic:hover {
+  transform: scale(1.05); /* Aumenta a caixa suavemente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
