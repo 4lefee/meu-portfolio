@@ -1,4 +1,4 @@
-/* Estilos globais */
+
 body {
   margin: 0;
   padding: 0;
@@ -11,35 +11,56 @@ body {
   min-height: 100vh;
 }
 
-/* Container principal */
+
 .container {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
 }
 
-/* Seção de introdução */
+
 .intro-section {
   text-align: center;
-  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Título */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+    text-align: left;
+  }
+
+  .intro-section {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+
 .greeting {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
-/* Cor do símbolo HTML */
+@media (min-width: 768px) {
+  .greeting {
+    font-size: 2.5rem;
+  }
+}
+
+
 .html-tag {
   color: #EBA417;
 }
 
-/* Nome */
+
 .name {
   color: #3B82F6;
 }
 
-/* Container dos botões */
+
 .button-container {
   display: flex;
   flex-direction: column;
@@ -47,18 +68,18 @@ body {
   margin-top: 2rem;
 }
 
-/* Botões */
+
 .button {
   border: none;
   color: rgb(0, 0, 0);
-  padding: 0.5rem 0.8rem; /* Ajuste do padding horizontal */
+  padding: 0.5rem 0.8rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
   max-width: 200px;
   text-align: center;
-  min-width: 100px; /* Define largura mínima */
+  min-width: 100px;
 }
 
 .button.sobre {
@@ -70,24 +91,39 @@ body {
 }
 
 .button.experiencias {
-  background-color: #4DB8FF; /* Cor para "Experiências" */
+  background-color: #4DB8FF;
 }
 
 .button.contate {
   background-color: #75DA8B;
 }
 
+@media (min-width: 768px) {
+  .button {
+    padding: 0.8rem 1rem; 
+    font-size: 1.1rem;
+  }
+}
 
-/* Estilos da imagem */
+
 .image-container {
-  width: 320px; /* Dobro do tamanho original (200px) */
-  height: 320px; /* Dobro do tamanho original (200px) */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 1rem; 
 }
 
 .profile-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 0; 
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Experiences.css"; // Importando o CSS específico
+import "./Experiences.css"; 
 
 const Experiences = () => {
   return (

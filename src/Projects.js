@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css"; // Arquivo de estilo para personalização
+import "./Projects.css"; 
 
 const Projects = () => {
   return (
@@ -13,8 +13,8 @@ const Projects = () => {
           rel="noopener noreferrer"
           className="project"
         >
-          <div className="project-icon kafka-icon"></div>
-          <p className="project-name">Alice in Cocacafeland</p>
+          <div className="project-icon primeiro-icon"></div>
+          <p className="project-name">Alice in Cocafeland</p>
         </a>
         
         {/* Segundo projeto */}
@@ -24,7 +24,7 @@ const Projects = () => {
           rel="noopener noreferrer"
           className="project"
         >
-          <div className="project-icon rabbitmq-icon"></div>
+          <div className="project-icon segundo-icon"></div>
           <p className="project-name">Inovaula Logger</p>
         </a>
       </div>

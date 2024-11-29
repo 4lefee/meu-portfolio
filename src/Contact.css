@@ -1,16 +1,15 @@
-/* Estilo geral para o HTML e body */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%; /* Garante que o body ocupe 100% da altura da viewport */
+  width: 100%;
 }
 
-/* Estilo da página de contato */
+
 .contact-page {
-  background-color: #1f1f38; /* Cor de fundo escura */
-  color: #75DA8B; /* Cor verde para o título e links */
-  min-height: 100vh; /* Garante que o container principal ocupe toda a altura */
+  background-color: #1f1f38; 
+  color: #75DA8B;
+  min-height: 100vh; 
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -19,38 +18,50 @@ html, body {
   text-align: center;
 }
 
-/* Título da página de contato */
+
 .contact-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #75DA8B; /* Cor verde */
+  color: #75DA8B;
 }
 
-/* Caixa de texto com fundo verde e texto preto */
+@media (min-width: 768px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+}
+
+
 .contact-text, .contact-info {
-  background-color: #75DA8B; /* Caixa de fundo verde */
-  color: #000; /* Texto preto */
+  background-color: #75DA8B; 
+  color: #000; 
   padding: 1rem;
   border-radius: 10px;
-  width: 80%; /* Largura da caixa */
-  max-width: 600px; /* Limita a largura máxima */
-  margin-bottom: 1.5rem; /* Espaço entre as caixas */
-  text-align: left;
+  width: 90%; 
+  max-width: 600px; 
+  margin-bottom: 1.5rem; 
+  text-align: left; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para links */
+@media (min-width: 768px) {
+  .contact-text, .contact-info {
+    width: 80%; 
+  }
+}
+
+
 .contact-link {
-  color: #3B82F6; /* Azul para links */
+  color: #3B82F6; 
   text-decoration: none;
 }
 
 .contact-link:hover {
-  text-decoration: underline; /* Sublinhar quando o mouse passar por cima */
+  text-decoration: underline; 
 }
 
-.contact-text, .contact-info {
-  transform: scale(1.05); /* Aumenta a caixa suavemente */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+.contact-text:hover, .contact-info:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }

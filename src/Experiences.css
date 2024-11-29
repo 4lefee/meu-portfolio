@@ -1,8 +1,7 @@
-/* Estilo geral da página de Experiências */
 .experiences-page {
-  background-color: #1a1a2e; /* Fundo escuro */
-  color: #8A2BE2; /* Cor do botão Experiências */
-  height: 100vh;
+  background-color: #1a1a2e; 
+  color: #8A2BE2; 
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,38 +9,53 @@
   padding: 2rem;
 }
 
-/* Título da página */
 .experiences-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: #8A2BE2; /* Cor roxa do título */
+  color: #8A2BE2; 
 }
 
-/* Container de tópicos */
+@media (min-width: 768px) {
+  .experiences-title {
+    font-size: 3rem; 
+  }
+}
+
+
 .experiences-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 80%; /* Largura máxima dos tópicos */
-  max-width: 800px; /* Limite de largura */
+  width: 90%; 
+  max-width: 800px;
 }
 
-/* Cada tópico */
+@media (min-width: 768px) {
+  .experiences-container {
+    width: 80%; 
+  }
+}
+
 .experience-topic {
-  background-color: #8A2BE2; /* Cor roxa para o fundo das caixas de texto */
+  background-color: #8A2BE2; 
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: #000; /* Texto em preto */
-  font-size: 1.5rem;
-  text-align: justify; /* Texto justificado */
+  color: #000; 
+  font-size: 1.2rem;
+  text-align: justify; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+@media (min-width: 768px) {
+  .experience-topic {
+    font-size: 1.5rem; 
+  }
 }
 
 .experience-topic:hover {
-  transform: scale(1.05); /* Aumenta a caixa suavemente */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }

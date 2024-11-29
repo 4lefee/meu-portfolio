@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Routes from "./Routes"; // Importando o gerenciador de rotas
-import "./App.css"; // Linkando o CSS
+import Routes from "./Routes"; 
+import "./App.css"; 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

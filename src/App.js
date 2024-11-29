@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Navegação entre páginas
-import "./App.css"; // Estilos
-import ProfileImage from "./B1DA14E1-FB9A-4B95-A605-C4D52FED3F01.jpg"; // Caminho correto para a imagem
+import { useNavigate } from "react-router-dom"; 
+import "./App.css"; 
+import ProfileImage from "./B1DA14E1-FB9A-4B95-A605-C4D52FED3F01.jpg"; 
 
 const App = () => {
-  const navigate = useNavigate(); // Função de navegação
+  const navigate = useNavigate(); 
 
   return (
     <div className="container">

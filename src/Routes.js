@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./App"; // Página inicial
-import About from "./Sobre"; // Sobre mim
-import Projects from "./Projects"; // Projetos
+import Home from "./App"; 
+import About from "./Sobre"; 
+import Projects from "./Projects"; 
 import Experiences from './Experiences';
-import Contact from "./Contact"; // Importa a página de contato
+import Contact from "./Contact"; 
 
 const AppRoutes = () => {
   return (
